@@ -15,6 +15,8 @@
 
 ---
 
+> ⭐ **If you find this useful for your research, please consider starring the repository!**
+
 ## 📌 About This Project
 
 This repository contains a **complete, from-scratch implementation** of [3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) (SIGGRAPH 2023), built entirely in PyTorch.
@@ -47,21 +49,27 @@ This repository contains a **complete, from-scratch implementation** of [3D Gaus
 
 #### Materials
 ![Materials Comparison](results/materials/comparison.png)
+![Materials Training Curves](results/materials/training_curves.png)
 
 #### Lego
 ![Lego Comparison](results/lego/comparison.png)
+![Lego Training Curves](results/lego/training_curves.png)
 
 #### Chair
 ![Chair Comparison](results/chair/comparison.png)
+![Chair Training Curves](results/chair/training_curves.png)
 
 #### Ficus
 ![Ficus Comparison](results/ficus/comparison.png)
+![Ficus Training Curves](results/ficus/training_curves.png)
 
 #### Ship
 ![Ship Comparison](results/ship/comparison.png)
+![Ship Training Curves](results/ship/training_curves.png)
 
 #### Drums
 ![Drums Comparison](results/drums/comparison.png)
+![Drums Training Curves](results/drums/training_curves.png)
 
 ---
 
@@ -150,8 +158,8 @@ Training takes ~2-3 hours on T4 GPU for 20K iterations.
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/3dgs-pytorch.git
-cd 3dgs-pytorch
+git clone https://github.com/RishitSaxena55/gaussian-splatting-pytorch.git
+cd gaussian-splatting-pytorch
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -389,9 +397,37 @@ config = {
 
 Interested in collaborating on 3D vision research? Let's connect!
 
-- **LinkedIn**: [Your LinkedIn]
-- **Email**: [Your Email]
-- **Twitter/X**: [Your Handle]
+- **LinkedIn**: [Rishit Saxena](https://www.linkedin.com/in/rishit-saxena-12922531b/)
+- **Email**: rishitsaxena55@gmail.com
+- **Twitter/X**: [@SaxenaRishit55](https://x.com/SaxenaRishit55)
+
+---
+
+## 🙏 Acknowledgments
+
+This implementation is based on the groundbreaking work:
+
+> **3D Gaussian Splatting for Real-Time Radiance Field Rendering**  
+> Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis  
+> ACM Transactions on Graphics (SIGGRAPH 2023)
+
+Thanks to the authors for releasing the [official implementation](https://github.com/graphdeco-inria/gaussian-splatting) and inspiring this PyTorch version.
+
+---
+
+## 📖 Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@misc{saxena2024gaussian,
+  author = {Rishit Saxena},
+  title = {3D Gaussian Splatting: Pure PyTorch Implementation},
+  year = {2024},
+  publisher = {GitHub},
+  url = {https://github.com/RishitSaxena55/gaussian-splatting-pytorch}
+}
+```
 
 ---
 
