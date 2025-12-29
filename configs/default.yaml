@@ -1,0 +1,58 @@
+# Default configuration for 3D Gaussian Splatting
+# Optimized for Google Colab T4 GPU (free tier)
+
+# Dataset settings
+dataset:
+  type: "nerf_synthetic"  # nerf_synthetic, colmap, custom
+  resolution: 800  # Image resolution
+  white_background: true
+
+# Gaussian initialization
+gaussian:
+  initial_sh_degree: 0  # Start with degree 0, increase during training
+  max_sh_degree: 3  # Maximum SH degree
+
+# Training settings
+training:
+  iterations: 30000
+  checkpoint_interval: 5000  # Save every N iterations (important for free Colab)
+  
+  # Batch settings (T4 optimized)
+  batch_size: 1  # Images per batch
+  
+  # Learning rates
+  lr:
+    position: 0.00016
+    position_final: 0.0000016
+    feature: 0.0025
+    opacity: 0.05
+    scaling: 0.005
+    rotation: 0.001
+  
+  # Learning rate scheduling
+  position_lr_delay_mult: 0.01
+  position_lr_max_steps: 30000
+
+# Densification settings
+densification:
+  start_iteration: 500
+  end_iteration: 15000
+  interval: 100  # Densify every N iterations
+  
+  # Thresholds
+  gradient_threshold: 0.0002
+  opacity_threshold: 0.005
+  scale_threshold: 0.01  # Fraction of scene extent
+  
+  # Opacity reset
+  opacity_reset_interval: 3000
+
+# Loss settings
+loss:
+  lambda_dssim: 0.2  # Weight for SSIM loss
+  
+# Memory optimization (for T4)
+memory:
+  mixed_precision: true  # Use FP16
+  gradient_checkpointing: true
+  max_gaussians: 500000  # Limit for memory

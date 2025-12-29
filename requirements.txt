@@ -1,0 +1,26 @@
+# Core Dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+plotly>=5.15.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+Pillow>=9.5.0
+tqdm>=4.65.0
+PyYAML>=6.0
+opencv-python>=4.8.0
+scipy>=1.10.0
+
+# Metrics
+lpips>=0.1.4
+pytorch-msssim>=1.0.0
+
+# Experiment Tracking (optional)
+wandb>=0.15.0
+
+# Interactive Visualization
+ipywidgets>=8.0.0
+
+# Point Cloud Processing
+plyfile>=1.0.0
