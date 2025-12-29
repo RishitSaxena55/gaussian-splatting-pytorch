@@ -98,3 +98,8 @@ outputs/
 # Logs
 *.log
 wandb/
+
+# Generated 3DGS files (large)
+*.ply
+*.html
+trained_gaussians/
